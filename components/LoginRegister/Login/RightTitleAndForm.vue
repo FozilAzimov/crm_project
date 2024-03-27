@@ -128,7 +128,11 @@ export default {
             // eslint-disable-next-line no-console
             console.error('Login request failed', error)
           })
-      }
+      } else if (!this.usernameValue && !this.passwordValue) {
+        this.borderColorUser = 'red'
+        this.borderColorPass = 'red'
+      } else if (!this.usernameValue) this.borderColorUser = 'red'
+      else if (!this.passwordValue) this.borderColorPass = 'red'
     },
   },
 }
