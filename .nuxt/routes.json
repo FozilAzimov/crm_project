@@ -1,0 +1,23 @@
+[
+  {
+    "name": "forgot-password",
+    "path": "/forgot-password",
+    "component": "D:\\\\crm_project\\\\pages\\\\forgot-password\\\\index.vue",
+    "chunkName": "pages/forgot-password/index",
+    "_name": "_40d17986"
+  },
+  {
+    "name": "login",
+    "path": "/login",
+    "component": "D:\\\\crm_project\\\\pages\\\\login\\\\index.vue",
+    "chunkName": "pages/login/index",
+    "_name": "_6fb47559"
+  },
+  {
+    "name": "index",
+    "path": "/",
+    "component": "D:\\\\crm_project\\\\pages\\\\index.vue",
+    "chunkName": "pages/index",
+    "_name": "_90d5201c"
+  }
+]

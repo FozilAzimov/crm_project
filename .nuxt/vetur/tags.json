@@ -1,0 +1,38 @@
+{
+  "ButtonGeneric": {
+    "description": "Auto imported from components/Generics/ButtonGeneric.vue"
+  },
+  "InputGeneric": {
+    "description": "Auto imported from components/Generics/InputGeneric.vue"
+  },
+  "ForgotPasswordRoot": {
+    "description": "Auto imported from components/LoginRegister/ForgotPassword/ForgotPasswordRoot.vue"
+  },
+  "LeftTemplate": {
+    "description": "Auto imported from components/LoginRegister/ForgotPassword/LeftTemplate.vue"
+  },
+  "RightFooterTemplate": {
+    "description": "Auto imported from components/LoginRegister/ForgotPassword/RightFooterTemplate.vue"
+  },
+  "RightTemplate": {
+    "description": "Auto imported from components/LoginRegister/ForgotPassword/RightTemplate.vue"
+  },
+  "RightTitleTemplate": {
+    "description": "Auto imported from components/LoginRegister/ForgotPassword/RightTitleTemplate.vue"
+  },
+  "LeftLoginTemplate": {
+    "description": "Auto imported from components/LoginRegister/Login/LeftLoginTemplate.vue"
+  },
+  "LoginRoot": {
+    "description": "Auto imported from components/LoginRegister/Login/LoginRoot.vue"
+  },
+  "RightFooter": {
+    "description": "Auto imported from components/LoginRegister/Login/RightFooter.vue"
+  },
+  "RightTemplateLogin": {
+    "description": "Auto imported from components/LoginRegister/Login/RightTemplateLogin.vue"
+  },
+  "RightTitleAndForm": {
+    "description": "Auto imported from components/LoginRegister/Login/RightTitleAndForm.vue"
+  }
+}
