@@ -1,3 +1,54 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* @import 'fonts/inter'; */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+* {
+  font-family: Inter, sans-serif, -apple-system, blinkmacsystemfont, Segoe UI,
+    roboto, Helvetica Neue, arial, Apple Color Emoji, Segoe UI Emoji,
+    Segoe UI Symbol !important;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings: 'slnt' 0;
+  overflow-x: hidden;
+  text-rendering: optimizeLegibility;
+}
+
+body {
+  overflow: overlay;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  /* display: none; <- Crashes Chrome on hover */
+  -webkit-appearance: none;
+  margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+input[type='number'] {
+  -moz-appearance: textfield; /* Firefox */
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.02);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgba(90, 90, 90, 0.7);
+  border-radius: 4px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(90, 90, 90, 0.9);
+}

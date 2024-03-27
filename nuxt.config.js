@@ -22,13 +22,15 @@ export default {
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
-  css: ['@assets/scss/main.scss', '@assets/css/main.css'],
+  // css: ['@assets/scss/main.scss', '@assets/css/main.css'],
+  css: ['@assets/css/main.css'],
 
   styleResources: {
     scss: [
       // Makes scss variables and mixins available in every component
       // Do not import here actual styles!
       'assets/scss/_variables.scss',
+      '@assets/scss/main.scss',
     ],
   },
 
@@ -39,7 +41,7 @@ export default {
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
-    '@/plugins/vee-validate.js',
+    // '@/plugins/vee-validate.js',
     // Custom plugin for getting information about the user's device
     '@/plugins/element-ui.js',
     // '@/plugins/drugguble.js',

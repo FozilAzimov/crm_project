@@ -21,7 +21,6 @@ import nuxt_plugin_workbox_4c819fbc from 'nuxt_plugin_workbox_4c819fbc' // Sourc
 import nuxt_plugin_metaplugin_2b9f183c from 'nuxt_plugin_metaplugin_2b9f183c' // Source: .\\pwa\\meta.plugin.js (mode: 'all')
 import nuxt_plugin_iconplugin_3046bdb0 from 'nuxt_plugin_iconplugin_3046bdb0' // Source: .\\pwa\\icon.plugin.js (mode: 'all')
 import nuxt_plugin_axios_27895ac0 from 'nuxt_plugin_axios_27895ac0' // Source: .\\axios.js (mode: 'all')
-import nuxt_plugin_veevalidate_21716614 from 'nuxt_plugin_veevalidate_21716614' // Source: ..\\plugins\\vee-validate.js (mode: 'all')
 import nuxt_plugin_elementui_7aa6cf5e from 'nuxt_plugin_elementui_7aa6cf5e' // Source: ..\\plugins\\element-ui.js (mode: 'all')
 import nuxt_plugin_axios_397e53b5 from 'nuxt_plugin_axios_397e53b5' // Source: ..\\plugins\\axios.js (mode: 'all')
 
@@ -88,7 +87,7 @@ async function createApp(ssrContext, config = {}) {
   // here we inject the router and store to all child components,
   // making them available everywhere as `this.$router` and `this.$store`.
   const app = {
-    head: {"title":"CRM","htmlAttrs":{"lang":"en"},"meta":[{"charset":"utf-8"},{"name":"viewport","content":"width=device-width, initial-scale=1"},{"hid":"description","name":"description","content":""},{"name":"format-detection","content":"telephone=no"},{"httpEquiv":"Set-Cookie","content":"SameSite=None; Secure"},{"httpEquiv":"Content-Security-Policy","content":"upgrade-insecure-requests"},{"hid":"charset","charset":"utf-8"},{"hid":"mobile-web-app-capable","name":"mobile-web-app-capable","content":"yes"},{"hid":"apple-mobile-web-app-title","name":"apple-mobile-web-app-title","content":"unicon-base-frontend"},{"hid":"og:type","name":"og:type","property":"og:type","content":"website"},{"hid":"og:title","name":"og:title","property":"og:title","content":"unicon-base-frontend"},{"hid":"og:site_name","name":"og:site_name","property":"og:site_name","content":"unicon-base-frontend"}],"link":[{"rel":"icon","type":"image\u002Fx-icon","href":"\u002Ffavicon.ico"},{"hid":"shortcut-icon","rel":"shortcut icon","href":"\u002F_nuxt\u002Ficons\u002Ficon_64x64.e3e9fb.png"},{"hid":"apple-touch-icon","rel":"apple-touch-icon","href":"\u002F_nuxt\u002Ficons\u002Ficon_512x512.e3e9fb.png","sizes":"512x512"},{"rel":"manifest","href":"\u002F_nuxt\u002Fmanifest.5d10f4a6.json","hid":"manifest"}],"style":[],"script":[]},
+    head: {"title":"CRM","htmlAttrs":{"lang":"en"},"meta":[{"charset":"utf-8"},{"name":"viewport","content":"width=device-width, initial-scale=1"},{"hid":"description","name":"description","content":""},{"name":"format-detection","content":"telephone=no"},{"httpEquiv":"Set-Cookie","content":"SameSite=None; Secure"},{"httpEquiv":"Content-Security-Policy","content":"upgrade-insecure-requests"}],"link":[{"rel":"icon","type":"image\u002Fx-icon","href":"\u002Ffavicon.ico"}],"style":[],"script":[]},
 
     store,
     router,
@@ -248,10 +247,6 @@ async function createApp(ssrContext, config = {}) {
 
   if (typeof nuxt_plugin_axios_27895ac0 === 'function') {
     await nuxt_plugin_axios_27895ac0(app.context, inject)
-  }
-
-  if (typeof nuxt_plugin_veevalidate_21716614 === 'function') {
-    await nuxt_plugin_veevalidate_21716614(app.context, inject)
   }
 
   if (typeof nuxt_plugin_elementui_7aa6cf5e === 'function') {
