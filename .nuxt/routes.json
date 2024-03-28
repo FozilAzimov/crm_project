@@ -2,19 +2,19 @@
   {
     "name": "forgot-password",
     "path": "/forgot-password",
-    "component": "D:\\\\crm_project\\\\pages\\\\forgot-password\\\\index.vue",
+    "component": "C:\\\\Users\\\\user\\\\crm_project\\\\pages\\\\forgot-password\\\\index.vue",
     "chunkName": "pages/forgot-password/index"
   },
   {
     "name": "login",
     "path": "/login",
-    "component": "D:\\\\crm_project\\\\pages\\\\login\\\\index.vue",
+    "component": "C:\\\\Users\\\\user\\\\crm_project\\\\pages\\\\login\\\\index.vue",
     "chunkName": "pages/login/index"
   },
   {
     "name": "index",
     "path": "/",
-    "component": "D:\\\\crm_project\\\\pages\\\\index.vue",
+    "component": "C:\\\\Users\\\\user\\\\crm_project\\\\pages\\\\index.vue",
     "chunkName": "pages/index"
   }
 ]
