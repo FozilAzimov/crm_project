@@ -2,22 +2,37 @@
   {
     "name": "forgot-password",
     "path": "/forgot-password",
+<<<<<<< HEAD
     "component": "D:\\\\crm_project\\\\pages\\\\forgot-password\\\\index.vue",
     "chunkName": "pages/forgot-password/index",
     "_name": "_40d17986"
+=======
+    "component": "C:\\\\Users\\\\user\\\\crm_project\\\\pages\\\\forgot-password\\\\index.vue",
+    "chunkName": "pages/forgot-password/index"
+>>>>>>> b8c6cf551ff7cda2e1aee9f91c2613acd522449a
   },
   {
     "name": "login",
     "path": "/login",
+<<<<<<< HEAD
     "component": "D:\\\\crm_project\\\\pages\\\\login\\\\index.vue",
     "chunkName": "pages/login/index",
     "_name": "_6fb47559"
+=======
+    "component": "C:\\\\Users\\\\user\\\\crm_project\\\\pages\\\\login\\\\index.vue",
+    "chunkName": "pages/login/index"
+>>>>>>> b8c6cf551ff7cda2e1aee9f91c2613acd522449a
   },
   {
     "name": "index",
     "path": "/",
+<<<<<<< HEAD
     "component": "D:\\\\crm_project\\\\pages\\\\index.vue",
     "chunkName": "pages/index",
     "_name": "_90d5201c"
+=======
+    "component": "C:\\\\Users\\\\user\\\\crm_project\\\\pages\\\\index.vue",
+    "chunkName": "pages/index"
+>>>>>>> b8c6cf551ff7cda2e1aee9f91c2613acd522449a
   }
 ]
