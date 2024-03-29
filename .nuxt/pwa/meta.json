@@ -21,6 +21,11 @@
       "content": "unicon-base-frontend"
     },
     {
+      "hid": "description",
+      "name": "description",
+      "content": "## Build Setup"
+    },
+    {
       "hid": "og:type",
       "name": "og:type",
       "property": "og:type",
@@ -37,6 +42,12 @@
       "name": "og:site_name",
       "property": "og:site_name",
       "content": "unicon-base-frontend"
+    },
+    {
+      "hid": "og:description",
+      "name": "og:description",
+      "property": "og:description",
+      "content": "## Build Setup"
     }
   ],
   "link": [
@@ -53,7 +64,7 @@
     },
     {
       "rel": "manifest",
-      "href": "/_nuxt/manifest.5d10f4a6.json",
+      "href": "/_nuxt/manifest.1c11eff8.json",
       "hid": "manifest"
     }
   ],

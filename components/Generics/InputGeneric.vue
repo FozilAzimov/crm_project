@@ -14,7 +14,7 @@
       />
       <label
         :for="id"
-        class="absolute text-sm text-gray-500 duration-300 transform -translate-y-4 scale-75 top-3 z-10 origin-[0] bg-white px-2 w-[140px] h-[23px] peer-focus:w-fit peer-focus:px-2 peer-focus:text-[#8C57FF] peer-placeholder-shown:scale-100 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:top-1/2 peer-focus:top-3 peer-focus:scale-75 peer-focus:-translate-y-4 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto start-1"
+        class="absolute text-sm text-gray-500 duration-300 transform-translate-y-4 scale-75 top-3 z-10 origin-[0] bg-white px-2 w-[140px] h-[23px] peer-focus:w-fit peer-focus:text-[#8C57FF] peer-placeholder-shown:scale-100 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:top-1/2 peer-focus:top-3 peer-focus:scale-75 peer-focus:-translate-y-4 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto start-1"
         :style="{ textSize: `${textSize}px` }"
         >{{ borderName }}</label
       >

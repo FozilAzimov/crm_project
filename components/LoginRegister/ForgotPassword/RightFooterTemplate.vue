@@ -1,7 +1,7 @@
 <template>
   <div>
     <form class="my-3 flex flex-col gap-3">
-      <InputGeneric
+      <input-generic
         id="email"
         name="email"
         type="email"
@@ -13,7 +13,7 @@
         border-name="Email"
         @input="getValuesInputAction"
       />
-      <ButtonGeneric
+      <button-generic
         name="Send Reset Link"
         bg-color="#8C57FF"
         color="white"
@@ -64,9 +64,6 @@ export default {
         this.$axios
           .post(`/forgetPassword`, {
             email: this.emailValue,
-            headers: {
-              Authorization: `Bearer ${localStorage.getItem('token')}`,
-            },
           })
           .then((res) => {})
           .catch((error) => {

@@ -1,8 +1,8 @@
 <template>
   <div class="h-screen flex justify-center items-center px-10">
     <div class="max-w-[500px]">
-      <RightTitleTemplate />
-      <RightFooterTemplate />
+      <right-title-template />
+      <right-footer-template />
     </div>
   </div>
 </template>

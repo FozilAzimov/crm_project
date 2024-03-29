@@ -1,7 +1,7 @@
 <template>
   <div class="flex items-center">
-    <LeftTemplate class="leftTemplate w-2/3 bg-[rgb(244,245,250)]" />
-    <RightTemplate class="w-1/3" />
+    <left-template class="leftTemplate w-2/3 bg-[rgb(244,245,250)]" />
+    <right-template class="w-1/3" />
   </div>
 </template>
 

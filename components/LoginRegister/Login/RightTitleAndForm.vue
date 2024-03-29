@@ -10,7 +10,7 @@
       Please sign-in to your account and start the adventure
     </p>
     <form class="my-3 flex flex-col gap-2">
-      <InputGeneric
+      <input-generic
         id="username"
         name="username"
         type="text"
@@ -23,7 +23,7 @@
         border-name="Username"
         @input="getValuesInputAction"
       />
-      <InputGeneric
+      <input-generic
         id="password"
         name="password"
         :type="password"
@@ -49,7 +49,7 @@
           >Forgot Password?</nuxt-link
         >
       </div>
-      <ButtonGeneric
+      <button-generic
         name="Login"
         bg-color="#8C57FF"
         color="white"
