@@ -1,5 +1,5 @@
-import path from 'path'
-import fs from 'fs'
+// import path from 'path'
+// import fs from 'fs'
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
@@ -22,14 +22,12 @@ export default {
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
-  // css: ['@assets/scss/main.scss', '@assets/css/main.css'],
   css: ['@assets/css/main.css'],
 
   styleResources: {
     scss: [
       // Makes scss variables and mixins available in every component
       // Do not import here actual styles!
-      'assets/scss/_variables.scss',
       '@assets/scss/main.scss',
     ],
   },
@@ -119,10 +117,10 @@ export default {
   },
 
   server: {
-    https: {
-      key: fs.readFileSync(path.resolve(__dirname, './keys/private.key')),
-      cert: fs.readFileSync(path.resolve(__dirname, './keys/certificate.crt')),
-    },
+    // https: {
+    //   key: fs.readFileSync(path.resolve(__dirname, './keys/private.key')),
+    //   cert: fs.readFileSync(path.resolve(__dirname, './keys/certificate.crt')),
+    // },
     // port: 8443,
     // host: '192.168.1.64',
   },

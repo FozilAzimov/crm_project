@@ -12,6 +12,7 @@
         input-type="labelInput"
         border-name="Email"
         @input="getValuesInputAction"
+        @enter="getResponseAction"
       />
       <button-generic
         name="Send Reset Link"

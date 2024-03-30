@@ -37,6 +37,7 @@
         :is-show-hide="isShowHide"
         @click="showHideAction"
         @input="getValuesInputAction"
+        @enter="getResponseAction"
       />
       <div class="flex items-center justify-between my-4">
         <span class="flex items-center gap-2">

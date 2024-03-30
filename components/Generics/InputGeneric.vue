@@ -3,18 +3,20 @@
     <div class="relative">
       <input
         :id="id"
+        :ref="name"
         :type="type"
-        class="my-2 block px-2.5 pb-2.5 pt-4 w-full text-sm text-gray-900 bg-transparent rounded-lg border-[1px] border-solid border-[#D1CFD4] appearance-none focus:outline-none focus:ring-0 focus:border-[#8C57FF] peer"
+        class="input my-2 block px-4 pb-2.5 pt-4 w-full text-sm text-gray-900 bg-transparent rounded-lg border-[1px] border-solid border-[#D1CFD4] appearance-none focus:outline-none focus:ring-0 focus:border-[#8C57FF] peer"
         :placeholder="placeholder"
         :style="{
           textSize: `${textSize}px`,
           border: borderColor && `1px solid ${borderColor}`,
         }"
         @input="setInputValueAction"
+        @keyup.enter="enterAction"
       />
       <label
         :for="id"
-        class="absolute text-sm text-gray-500 duration-300 transform-translate-y-4 scale-75 top-3 z-10 origin-[0] bg-white px-2 w-[140px] h-[23px] peer-focus:w-fit peer-focus:text-[#8C57FF] peer-placeholder-shown:scale-100 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:top-1/2 peer-focus:top-3 peer-focus:scale-75 peer-focus:-translate-y-4 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto start-1"
+        class="absolute text-sm text-gray-500 duration-300 transform-translate-y-4 scale-75 top-[-1px] z-10 origin-[0] bg-white mx-2 px-2 w-fit h-[23px] peer-focus:text-[#8C57FF] peer-placeholder-shown:scale-100 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:top-1/2 peer-focus:top-3 peer-focus:scale-75 peer-focus:-translate-y-4 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto start-1"
         :style="{ textSize: `${textSize}px` }"
         >{{ borderName }}</label
       >
@@ -120,6 +122,13 @@ export default {
     },
   },
 
+  // Mounted
+  mounted() {
+    if (this.name === 'username' || this.name === 'email') {
+      this.$refs[this.name].focus()
+    }
+  },
+
   // Methods
   methods: {
     showHideAction() {
@@ -129,6 +138,10 @@ export default {
     setInputValueAction({ target: { value } }) {
       this.$emit('input', this.name, value)
     },
+
+    enterAction() {
+      this.$emit('enter')
+    },
   },
 }
 </script>
@@ -137,5 +150,12 @@ export default {
 input[type='checkbox'] {
   accent-color: #8c57ff !important;
   cursor: pointer;
+}
+
+.input::placeholder {
+  color: #fff;
+}
+.input:focus::placeholder {
+  color: rgba(0, 0, 0, 0.4);
 }
 </style>
