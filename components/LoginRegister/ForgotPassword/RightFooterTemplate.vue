@@ -25,7 +25,7 @@
     <div
       class="flex items-center justify-center text-[#8C57FF] mt-8 text-[15px]"
     >
-      <nuxt-link to="login" class="flex items-center gap-[6px]">
+      <nuxt-link to="/login" class="flex items-center gap-[6px]">
         <img
           src="@/assets/icons/left-arrow.png"
           alt="left-arrow"

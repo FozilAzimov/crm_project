@@ -48,7 +48,7 @@
             >Remember me</label
           >
         </span>
-        <nuxt-link to="forgot-password" class="text-[#8C57FF] text-[15px]"
+        <nuxt-link to="/forgot-password" class="text-[#8C57FF] text-[15px]"
           >Forgot Password?</nuxt-link
         >
       </div>
