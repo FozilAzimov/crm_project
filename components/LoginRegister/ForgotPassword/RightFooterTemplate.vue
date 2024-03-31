@@ -1,6 +1,6 @@
 <template>
   <div>
-    <form class="my-3 flex flex-col gap-3">
+    <form class="my-3 flex flex-col gap-6">
       <input-generic
         id="email"
         name="email"

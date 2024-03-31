@@ -7,6 +7,7 @@
       background: `${bgColor}`,
       color: `${color}`,
       fontSize: `${size}px`,
+      padding: padding,
     }"
     @click="clickAction"
   >
@@ -29,6 +30,10 @@ export default {
     color: {
       type: String,
       default: '',
+    },
+    padding: {
+      type: String,
+      default: '8px',
     },
     size: {
       type: Number,

@@ -1,9 +1,7 @@
 <template>
-  <div class="h-screen flex justify-center items-center px-10">
-    <div class="max-w-[500px]">
-      <right-title-and-form />
-      <right-footer />
-    </div>
+  <div class="h-screen flex flex-col justify-center items-center px-10">
+    <right-title-and-form class="w-full" />
+    <right-footer class="w-full" />
   </div>
 </template>
 
