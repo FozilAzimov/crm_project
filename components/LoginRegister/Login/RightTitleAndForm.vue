@@ -21,6 +21,7 @@
         :border-color="borderColorUser"
         input-type="labelInput"
         border-name="Username"
+        required-text="This field is required"
         @input="getValuesInputAction"
       />
       <input-generic
@@ -35,6 +36,7 @@
         border-name="Password"
         :border-color="borderColorPass"
         :is-show-hide="isShowHide"
+        required-text="This field is required"
         @click="showHideAction"
         @input="getValuesInputAction"
         @enter="getResponseAction"
